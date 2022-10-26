@@ -17,7 +17,6 @@ for (let i = 0; i < 3; i++) {
 webpack.config.js
 
 ```csharp
-const HtmlWebpackPlugin = require("bundle-url-check-loader");
 module.exports = {
     ...
     module: {
