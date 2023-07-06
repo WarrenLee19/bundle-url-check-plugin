@@ -1,6 +1,6 @@
 {
   "name": "bundle-url-check-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Detect and replace invalid or wrong resources in the webpack packaging phase",
   "main": "index.js",
   "scripts": {

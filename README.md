@@ -1,6 +1,12 @@
 ## Example
+```shell
+npm i bundle-url-check-loader -D
+yarn add bundle-url-check-loader -D
+pnpm i bundle-url-check-loader -D
+```
+
 **js**
-```csharp
+```js
 const checkAUrlList = [
     "http://schemas.microsoft.com/office/excel/2006/main",
     "http://schemas.openxmlformats.org/officeDocument/2006/custom-properties",
@@ -16,7 +22,7 @@ for (let i = 0; i < 3; i++) {
 ```
 webpack.config.js
 
-```csharp
+```ts
 module.exports = {
     ...
     module: {
@@ -36,3 +42,13 @@ module.exports = {
     ...
    
 };
+
+or
+
+chainConfig
+
+config.module.rule('bundle-url').test(/\.js$/).options({
+      url:'https://www.baidu.com',
+        reg:[/^http[s]{0,1}:\/\/schemas\.\S*/]
+    })
+```
