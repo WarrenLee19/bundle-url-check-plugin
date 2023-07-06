@@ -1,7 +1,7 @@
 // bundle-author-loader.js
 // 加载待检测的图片url，根据其返回值决定是否替换
 const https = require("https");
-const http = require("node:http");
+const http = require("http");
 // 会将源代码解析成 `AST`
 const parser = require("@babel/parser");
 // 对 `AST` 节点进行递归遍历，生成一个便于操作、转换的 `path` 对象
